@@ -1,0 +1,230 @@
+---
+title: "modular_setup"
+format:
+  html:
+    toc: true
+---
+
+## 1010music
+
+-   [Bitbox Micro](https://1010music.com/product/bitbox-micro) \[[quick start](manuals/bitbox%20micro%202.2.3%20quick%20start%20guide%20March%2030,%202023.pdf)\] \[[manual](manuals/Bitbox-Micro-User-Manual-2.1.1.pdf)\] \[[downloads and updates](https://forum.1010music.com/forum/products/test-level-1/original)\]
+
+## 2hp
+
+-   [Buff](https://www.twohp.com/modules/buff) \[[manual](manuals/Buff_Manual_2023.pdf)\]
+
+-   [ADSR](https://www.twohp.com/modules/adsr) \[[manual](manuals/ADSR_Manual_2023.pdf)\]
+
+## Acid Rain Technology
+
+-   [Junction](https://acidraintechnology.com/products/junction) \[[manual](manuals/Junction_Manual.pdf)\]
+
+-   [Navigator](https://acidraintechnology.com/products/navigator) \[[manual](manuals/Navigator_Manual.pdf)\]
+
+## ALM Busy Circuits
+
+-   [MFX](https://busycircuits.com/alm032/) \[[manual](manuals/alm032-manual.pdf)\] \[[updates](https://busycircuits.com/firmware/alm032/)\] \[[what's new](https://busycircuits.com/firmware/alm032/ChangeLog.txt)\]
+
+-   [mmMIDI](https://busycircuits.com/alm023/) \[[manual](manuals/alm023-mmMIDI-manual.pdf)\]
+
+-   [Pamela's PRO Workout](https://busycircuits.com/alm034/) \[[manual](manuals/alm034-manual.pdf)\] \[[updates](https://busycircuits.com/firmware/alm034/)\] \[[what's new](http://busycircuits.com/firmware/alm034/release-notes.txt)\]
+
+-   [Tangle Quartet](https://busycircuits.com/alm009/) \[[manual](manuals/alm009-manual.pdf)\]
+
+-   [VCV Rack](https://busycircuits.com/vcv/) (<https://library.vcvrack.com/?brand=ALM%20Busy%20Circuits>)
+
+## Bastl Instruments
+
+-   [Ikarie](https://bastl-instruments.com/eurorack/modules/ikarie) \[[manual](manuals/manual-ikarie-web.pdf)\] \[[updates](https://bastl-instruments.com/support/updates)\]
+
+-   [Pizza](https://bastl-instruments.com/eurorack/modules/pizza) \[[manual](manuals/manual-pizza-oscillator-web.pdf)\] \[[updates](https://bastl-instruments.com/support/updates)\]
+
+## Befaco
+
+-   [MIDI Thing V2](https://www.befaco.org/midi-thing-v2/) \[[quick start](manuals/Midi_Thing_V2_Quick_start_guide_A4.pdf)\] \[[manual](manuals/Midi%20Thing%20V2_User_Manual.pdf)\] \[[updates](https://github.com/Befaco/MIDIThing2/releases)\] \[[online editor](https://befaco.org/configmidithing2)\]
+
+-   [STMix](https://www.befaco.org/stmix/) \[[manual](manuals/StMix_User_Manual.pdf)\]
+
+-   [VCV Rack](https://www.befaco.org/vcv-rack/) (<https://library.vcvrack.com/?brand=Befaco>)
+
+## Boredbrain
+
+-   [Xcelon](https://boredbrainmusic.com/product/xcelon/) \[[manual](manuals/Xcelon-UserGuide_v1.0.pdf)\]
+
+## Der Mann mit der Maschine
+
+-   [DROID](https://shop.dermannmitdermaschine.de/pages/droid-universal-cv-processor) \[[manual](manuals/droid-manual-blue-5.pdf)\] \[[downloads and updates](https://shop.dermannmitdermaschine.de/pages/downloads)\]
+
+## DivKid
+
+-   [Stereo Strip](https://www.befaco.org/stereo-strip/) \[[manual](manuals/Stereo_Strip_manual.pdf)\] \[[video](https://youtu.be/4ChJ8M9P_IM)\]
+
+## Dreadbox
+
+-   [Hysteria](https://www.dreadbox-fx.com/hysteria/) \[[manual](manuals/Hysteria-v1.1-Users-Manual-.pdf)\] \[[video](https://youtu.be/X53vSXa_bp0)\]
+
+## Empress Effects
+
+-   [ZOIA Euroburo](https://empresseffects.com/products/zoia-euroburo) \[[manual](manuals/ZEBU%20Manual%202%20dot%2030.pdf)\] \[[addendum](manuals/ZOIA%20Euroburo%20addendum%20manual.pdf)\] \[[quickstart](https://docs.google.com/document/d/1cZw7JVD5VwHTmOubZahnvFKJogcycV__8mYXGmKsMeY)\] \[[updates](https://empresseffects.freshdesk.com/support/solutions/articles/1000308788-updating-firmware-on-the-zoia-and-euroburo-latest-version-2-80-beta-3-0-)\]
+
+## Expert Sleepers
+
+-   [Disting EX](https://www.expert-sleepers.co.uk/distingEX.html) \[[manual](manuals/disting_EX_user_manual_1.25.pdf)\] \[[updates](https://www.expert-sleepers.co.uk/distingEXfirmwareupdates.html)\]
+
+-   [Tiny MIDI breakout](https://www.expert-sleepers.co.uk/tinymidibreakout.html)
+
+-   [ES-9](https://www.expert-sleepers.co.uk/es9.html) \[[manual](manuals/es9_user_manual_1.3.pdf)\] \[[updates](https://www.expert-sleepers.co.uk/es9firmware.html)\]
+
+-   [ES-5](https://www.expert-sleepers.co.uk/es5.html) \[[manual](https://www.expert-sleepers.co.uk/es5usermanual.html)\]
+
+-   [ESX-8MD](https://www.expert-sleepers.co.uk/esx8md.html) \[[manual](https://www.expert-sleepers.co.uk/esx8mdusermanual.html)\]
+
+-   [ESX-8CV](https://www.expert-sleepers.co.uk/esx8cv.html) \[[manual](https://www.expert-sleepers.co.uk/esx8cvusermanual.html)\]
+
+-   [Little Mikey](https://www.expert-sleepers.co.uk/littlemikey.html) \[[manual](https://www.expert-sleepers.co.uk/littlemikeyusermanual.html)\]
+
+## Frap Tools
+
+-   [321](https://frap.tools/products/321/) \[[manual](manuals/MANUALONE.pdf)\]
+
+-   [333](https://frap.tools/products/333/) \[[manual](manuals/MANUALONE.pdf)\]
+
+-   [411](https://frap.tools/products/411/) \[[manual](manuals/MANUALONE.pdf)\]
+
+## Happy Nerding
+
+-   [FX Aid PRO](https://happynerding.com/category/fx-aid-pro/) \[[manual](manuals/FxAidPro-04-08.pdf)\] \[[online editor](https://fxaid.app/pro)\] \[[updates](https://happynerding.com/category/fx-aid-pro/)\]
+
+## Instruo
+
+-   [Cruïn](https://www.instruomodular.com/product/cruin) \[[manual](manuals/cruïnn-Manual.pdf)\] \[[quickstart](manuals/cruinn-Quickstart-Print.pdf)\] \[[video](https://youtu.be/yhmkv1Ly8x0)\]
+
+## Knobula
+
+-   [Kickain](https://knobula.com/kickain) \[[quickstart](manuals/Kickain_QuickStartGuide.pdf)\] \[[downloads and updates](https://www.knobula.com/downloads)\]
+
+-   [Pianophonic](https://knobula.com/pianophonic) \[[manual](manuals/Pianophonic_Manual.pdf)\] \[[quickstart](manuals/Pianophonic_QuickStartGuide.pdf)\] \[[downloads and updates](https://www.knobula.com/downloads)\]
+
+## Make Noise
+
+-   [DPO](https://www.makenoisemusic.com/modules/dpo) \[[manual](manuals/dpo-manual.pdf)\]
+
+-   [DXG](https://www.makenoisemusic.com/modules/dxg) \[[manual](manuals/dxg-manual.pdf)\]
+
+-   [Maths](https://www.makenoisemusic.com/modules/maths) \[[manual](manuals/MATHSmanual2013.pdf)\]
+
+-   [Mimeophon](https://www.makenoisemusic.com/modules/mimeophon) \[[manual](manuals/mimeophon-manual.pdf)\] \[[updates](https://www.makenoisemusic.com/modules/mimeophon)\]
+
+-   [Morphagene](https://www.makenoisemusic.com/modules/morphagene) \[[manual](manuals/morphagene-manual.pdf)\] \[[updates](https://www.makenoisemusic.com/modules/morphagene)\]
+
+-   [Spectraphon](https://www.makenoisemusic.com/modules/spectraphon) \[[manual](manuals/spectraphon-manual.pdf)\] \[[updates](https://www.makenoisemusic.com/modules/spectraphon)\]
+
+-   [X-Pan](https://www.makenoisemusic.com/modules/x-pan) \[[manual](manuals/x-pan-manual.pdf)\]
+
+## Michigan Synth Works
+
+-   [F8R](https://michigansynthworks.com/collections/euromodules-test/products/8m-fader-bank-with-cv-i2c-and-midi) \[[updates](https://michigansynthworks.com/collections/euromodules-test/products/8m-fader-bank-with-cv-i2c-and-midi)\] \[[online editor](https://misw.us/editor)\]
+
+-   [µO_C micro Ornament & Crime](https://ornament-and-cri.me/) \[[updates](https://ornament-and-cri.me/firmware/)\] \[[phazerville](https://github.com/djphazer/O_C-Phazerville)\] \[[video 1](https://youtu.be/XRGlAmz3AKM)\] \[[video 2](https://youtu.be/bziSog_xscA)\]
+
+## Mordax
+
+-   [DATA](https://mordax.net/products/data) \[[manual](manuals/DATA_Manual.pdf)\] \[[updates](https://mordax.net/pages/data-firmware)\]
+
+## Mutable Instruments
+
+-   [Beads](https://mutable-instruments.net/modules/beads/) \[[manual](manuals/beads_quickstart.pdf)\]
+
+-   [Blades](https://pichenettes.github.io/mutable-instruments-documentation/modules/blades) \[[manual](manuals/blades_quickstart.pdf)\]
+
+-   [Links](https://pichenettes.github.io/mutable-instruments-documentation/modules/links) \[[manual](manuals/links_quickstart.pdf)\]
+
+-   [Marbles](https://mutable-instruments.net/modules/marbles/) \[[manual](manuals/marbles_quickstart.pdf)\] \[[latest firmware](https://pichenettes.github.io/mutable-instruments-documentation/modules/marbles/firmware/)\]
+
+-   [Plaits](https://mutable-instruments.net/modules/plaits/) \[[manual](manuals/plaits_quickstart.pdf)\] \[[online editor](https://pichenettes.github.io/plaits-editor/)\] \[[latest firmware](https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/firmware/)\]
+
+-   [Rings](https://mutable-instruments.net/modules/rings/) \[[manual](manuals/rings_quickstart.pdf)\] \[[latest firmware](https://pichenettes.github.io/mutable-instruments-documentation/modules/rings/firmware/)\]
+
+-   [Ripples](https://pichenettes.github.io/mutable-instruments-documentation/modules/ripples_2020/) (2020) \[[manual](manuals/ripples_quickstart.pdf)\]
+
+-   [Stages](https://mutable-instruments.net/modules/stages/) \[[manual](manuals/stages_quickstart.pdf)\] \[[latest firmware](https://pichenettes.github.io/mutable-instruments-documentation/modules/stages/firmware/)\]
+
+-   [Tides](https://pichenettes.github.io/mutable-instruments-documentation/modules/tides_2018/) (2018) \[[manual](manuals/tides_quickstart.pdf)\] \[[latest firmware](https://pichenettes.github.io/mutable-instruments-documentation/modules/tides_2018/firmware/)\]
+
+-   [Veils](https://pichenettes.github.io/mutable-instruments-documentation/modules/veils_2020/) (2020) \[[manual](manuals/veils_quickstart.pdf)\]
+
+See also: <https://pichenettes.github.io/mutable-instruments-documentation/third_party_firmware/>
+
+## Noise Engineering
+
+-   [Ampla Versio](https://noiseengineering.us/products/ampla-versio?color=black) \[[manual](https://manuals.noiseengineering.us/av/)\]
+
+-   [Basimilus Iteritas Alia](https://noiseengineering.us/products/basimilus-iteritas-alia?color=black) \[[manual](https://manuals.noiseengineering.us/bia/)\]
+
+-   [Desmodus Versio](https://noiseengineering.us/products/desmodus-versio?color=black) \[[manual](https://manuals.noiseengineering.us/dv/)\]
+
+-   [Librae Legio](https://noiseengineering.us/products/librae-legio?color=black) \[[manual](https://manuals.noiseengineering.us/ll/)\]
+
+-   [Roucha Legio](https://noiseengineering.us/products/roucha-legio?color=black) \[[manual](https://manuals.noiseengineering.us/rl/)\]
+
+-   [Sinc Defero](https://noiseengineering.us/products/sinc-defero?color=black) \[[manual](https://manuals.noiseengineering.us/sd/)\]
+
+See also:
+
+-   [World of Alia](https://noiseengineering.us/pages/world-of-alia)
+
+-   [World of Legio](https://noiseengineering.us/pages/world-of-legio)
+
+-   [World of Versio](https://noiseengineering.us/pages/world-of-versio)
+
+## OXI Instruments
+
+-   Meta
+
+-   [OXI Coral](https://oxiinstruments.com/oxi-coral/) \[[manual](manuals/OXI%20CORAL%20User%20Manual.pdf)\] \[[updates](https://oxiinstruments.com/oxi-coral/update/)\]
+
+-   [OXI One](https://oxiinstruments.com/oxi-one/) \[[manual](manuals/OXI%20One%20User%20Manual.pdf)\] \[[quickstart](manuals/OXI%20ONE%20-%20Quick%20Guide.pdf)\] \[[updates](https://oxiinstruments.com/oxi-one/update/)\]
+
+## Qu-Bit
+
+-   [Aurora](https://www.qubitelectronix.com/shop/p/aurora) \[[manual](manuals/Aurora_v1.7.4.pdf)\] \[[quickstart](manuals/Aurora_getting_started_v1.0.pdf)\] \[[updates](https://www.qubitelectronix.com/alternate-firmware/aurora)\]
+
+-   [Data Bender](https://www.qubitelectronix.com/shop/p/data-bender) \[[manual](manuals/Data_Bender_manual_2024.pdf)\] \[[quickstart](manuals/DB_getting_started.pdf)\] \[[updates](https://www.qubitelectronix.com/alternate-firmware/data-bender)\]
+
+-   [Mojave](https://www.qubitelectronix.com/shop/p/mojave) \[[manual](manuals/mojave_manual.pdf)\] \[[quickstart](manuals/mojave_getting_started.pdf)\] \[[updates](https://www.qubitelectronix.com/alternate-firmware/mojave)\] \[[online editor](https://narwhal.qubitelectronix.com/)\]
+
+-   [Nautilus](https://www.qubitelectronix.com/shop/p/nautilus) \[[manual](manuals/Nautilus_v1.1.3.pdf)\] \[[quickstart](manuals/nautilus_getting_started_v1.0.3.pdf)\] \[[updates](https://www.qubitelectronix.com/alternate-firmware/nautilus)\] \[[online editor](https://narwhal.qubitelectronix.com/)\]
+
+## Squarp Instruments
+
+-   [Hermod+](https://squarp.net/hermodplus/) \[[online manual](https://squarp.net/hermodplus/manual/)\] \[[manual](manuals/HERMODPLUS_manual-192ba1f6c17a52c55deea60d1b6230b4.pdf)\] \[[quickstart](manuals/HERMOD+%20QUICKSTART%20105x125-563d6977f9cfea7e52e7415d8f622743.pdf)\] \[[updates](https://squarp.net/hermodplus/firmware/)\]
+
+## Verbos Electronics
+
+-   [Amp & Tone](https://www.verboselectronics.com/modules/amplitudeandtonecontroller-k3dpb) \[[manual](manuals/AMP+&+TONE+Tech+Card.pdf)\] \[[video 1](https://www.youtube.com/watch?v=1hW6SAgKTGo)\] \[[video 2](https://www.youtube.com/watch?v=64EGFrEeALw)\] \[[video 3](https://www.youtube.com/watch?v=dJPrHQmXSqE)\]
+
+-   [Harmonic Oscillator](https://www.verboselectronics.com/modules/harmonic-oscillator) \[[manual](manuals/Harmonic+Oscillator+Tech+Card.pdf)\]
+
+## Winter Modular
+
+-   [ONE2FIVE](https://winter-modular.com/one2five/)
+
+## WMD
+
+-   [C4RBN](https://wmdevices.com/products/c4rbn) \[[manual](manuals/C4RBN_Manual_v1.1.pdf)\]
+
+-   [Javelin](https://wmdevices.com/products/javelin) \[[manual](manuals/JavelinManual_v1.1.pdf)\]
+
+-   [MSCL](https://wmdevices.com/products/mscl) \[[manual](manuals/MSCL_Manual_v0.2_1.pdf)\]
+
+## Xaoc Devices
+
+-   [Batumi II](https://xaocdevices.com/main/batumi2/) \[[manual](manuals/xaoc_batumi2_poti2_manual.pdf)\] \[[updates](https://xaocdevices.com/main/batumi2/)\]
+
+-   [Poti II](https://xaocdevices.com/main/poti2/) \[[manual](manuals/xaoc_batumi2_poti2_manual.pdf)\]
+
+-   [Zadar](https://xaocdevices.com/main/zadar/) \[[manual](manuals/xaoc_zadar_manual.pdf)\] \[[chart](manuals/xaoc_zadar_chart_2.0.pdf)\] \[[updates](https://xaocdevices.com/main/zadar/)\]
+
+## Ziqal
+
+-   [Dimension MK3](https://ziqal.com/?v=d3dcf429c679) \[[manual](manuals/dimension%20mk3%20-%20user%20guide.pdf)\] \[[updates](https://ziqal.com/support/?v=d3dcf429c679)\]

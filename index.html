@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>modular_setup</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="index_files/libs/clipboard/clipboard.min.js"></script>
+<script src="index_files/libs/quarto-html/quarto.js"></script>
+<script src="index_files/libs/quarto-html/popper.min.js"></script>
+<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="index_files/libs/quarto-html/anchor.min.js"></script>
+<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="index_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="index_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="index_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body>
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+<div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+  <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#music" id="toc-music" class="nav-link active" data-scroll-target="#music">1010music</a></li>
+  <li><a href="#hp" id="toc-hp" class="nav-link" data-scroll-target="#hp">2hp</a></li>
+  <li><a href="#acid-rain-technology" id="toc-acid-rain-technology" class="nav-link" data-scroll-target="#acid-rain-technology">Acid Rain Technology</a></li>
+  <li><a href="#alm-busy-circuits" id="toc-alm-busy-circuits" class="nav-link" data-scroll-target="#alm-busy-circuits">ALM Busy Circuits</a></li>
+  <li><a href="#bastl-instruments" id="toc-bastl-instruments" class="nav-link" data-scroll-target="#bastl-instruments">Bastl Instruments</a></li>
+  <li><a href="#befaco" id="toc-befaco" class="nav-link" data-scroll-target="#befaco">Befaco</a></li>
+  <li><a href="#boredbrain" id="toc-boredbrain" class="nav-link" data-scroll-target="#boredbrain">Boredbrain</a></li>
+  <li><a href="#der-mann-mit-der-maschine" id="toc-der-mann-mit-der-maschine" class="nav-link" data-scroll-target="#der-mann-mit-der-maschine">Der Mann mit der Maschine</a></li>
+  <li><a href="#divkid" id="toc-divkid" class="nav-link" data-scroll-target="#divkid">DivKid</a></li>
+  <li><a href="#dreadbox" id="toc-dreadbox" class="nav-link" data-scroll-target="#dreadbox">Dreadbox</a></li>
+  <li><a href="#empress-effects" id="toc-empress-effects" class="nav-link" data-scroll-target="#empress-effects">Empress Effects</a></li>
+  <li><a href="#expert-sleepers" id="toc-expert-sleepers" class="nav-link" data-scroll-target="#expert-sleepers">Expert Sleepers</a></li>
+  <li><a href="#frap-tools" id="toc-frap-tools" class="nav-link" data-scroll-target="#frap-tools">Frap Tools</a></li>
+  <li><a href="#happy-nerding" id="toc-happy-nerding" class="nav-link" data-scroll-target="#happy-nerding">Happy Nerding</a></li>
+  <li><a href="#instruo" id="toc-instruo" class="nav-link" data-scroll-target="#instruo">Instruo</a></li>
+  <li><a href="#knobula" id="toc-knobula" class="nav-link" data-scroll-target="#knobula">Knobula</a></li>
+  <li><a href="#make-noise" id="toc-make-noise" class="nav-link" data-scroll-target="#make-noise">Make Noise</a></li>
+  <li><a href="#michigan-synth-works" id="toc-michigan-synth-works" class="nav-link" data-scroll-target="#michigan-synth-works">Michigan Synth Works</a></li>
+  <li><a href="#mordax" id="toc-mordax" class="nav-link" data-scroll-target="#mordax">Mordax</a></li>
+  <li><a href="#mutable-instruments" id="toc-mutable-instruments" class="nav-link" data-scroll-target="#mutable-instruments">Mutable Instruments</a></li>
+  <li><a href="#noise-engineering" id="toc-noise-engineering" class="nav-link" data-scroll-target="#noise-engineering">Noise Engineering</a></li>
+  <li><a href="#oxi-instruments" id="toc-oxi-instruments" class="nav-link" data-scroll-target="#oxi-instruments">OXI Instruments</a></li>
+  <li><a href="#qu-bit" id="toc-qu-bit" class="nav-link" data-scroll-target="#qu-bit">Qu-Bit</a></li>
+  <li><a href="#squarp-instruments" id="toc-squarp-instruments" class="nav-link" data-scroll-target="#squarp-instruments">Squarp Instruments</a></li>
+  <li><a href="#verbos-electronics" id="toc-verbos-electronics" class="nav-link" data-scroll-target="#verbos-electronics">Verbos Electronics</a></li>
+  <li><a href="#winter-modular" id="toc-winter-modular" class="nav-link" data-scroll-target="#winter-modular">Winter Modular</a></li>
+  <li><a href="#wmd" id="toc-wmd" class="nav-link" data-scroll-target="#wmd">WMD</a></li>
+  <li><a href="#xaoc-devices" id="toc-xaoc-devices" class="nav-link" data-scroll-target="#xaoc-devices">Xaoc Devices</a></li>
+  <li><a href="#ziqal" id="toc-ziqal" class="nav-link" data-scroll-target="#ziqal">Ziqal</a></li>
+  </ul>
+</nav>
+</div>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">modular_setup</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="music" class="level2">
+<h2 class="anchored" data-anchor-id="music">1010music</h2>
+<ul>
+<li><a href="https://1010music.com/product/bitbox-micro">Bitbox Micro</a> [<a href="manuals/bitbox%20micro%202.2.3%20quick%20start%20guide%20March%2030,%202023.pdf">quick start</a>] [<a href="manuals/Bitbox-Micro-User-Manual-2.1.1.pdf">manual</a>] [<a href="https://forum.1010music.com/forum/products/test-level-1/original">downloads and updates</a>]</li>
+</ul>
+</section>
+<section id="hp" class="level2">
+<h2 class="anchored" data-anchor-id="hp">2hp</h2>
+<ul>
+<li><p><a href="https://www.twohp.com/modules/buff">Buff</a> [<a href="manuals/Buff_Manual_2023.pdf">manual</a>]</p></li>
+<li><p><a href="https://www.twohp.com/modules/adsr">ADSR</a> [<a href="manuals/ADSR_Manual_2023.pdf">manual</a>]</p></li>
+</ul>
+</section>
+<section id="acid-rain-technology" class="level2">
+<h2 class="anchored" data-anchor-id="acid-rain-technology">Acid Rain Technology</h2>
+<ul>
+<li><p><a href="https://acidraintechnology.com/products/junction">Junction</a> [<a href="manuals/Junction_Manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://acidraintechnology.com/products/navigator">Navigator</a> [<a href="manuals/Navigator_Manual.pdf">manual</a>]</p></li>
+</ul>
+</section>
+<section id="alm-busy-circuits" class="level2">
+<h2 class="anchored" data-anchor-id="alm-busy-circuits">ALM Busy Circuits</h2>
+<ul>
+<li><p><a href="https://busycircuits.com/alm032/">MFX</a> [<a href="manuals/alm032-manual.pdf">manual</a>] [<a href="https://busycircuits.com/firmware/alm032/">updates</a>] [<a href="https://busycircuits.com/firmware/alm032/ChangeLog.txt">what’s new</a>]</p></li>
+<li><p><a href="https://busycircuits.com/alm023/">mmMIDI</a> [<a href="manuals/alm023-mmMIDI-manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://busycircuits.com/alm034/">Pamela’s PRO Workout</a> [<a href="manuals/alm034-manual.pdf">manual</a>] [<a href="https://busycircuits.com/firmware/alm034/">updates</a>] [<a href="http://busycircuits.com/firmware/alm034/release-notes.txt">what’s new</a>]</p></li>
+<li><p><a href="https://busycircuits.com/alm009/">Tangle Quartet</a> [<a href="manuals/alm009-manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://busycircuits.com/vcv/">VCV Rack</a> (<a href="https://library.vcvrack.com/?brand=ALM%20Busy%20Circuits" class="uri">https://library.vcvrack.com/?brand=ALM%20Busy%20Circuits</a>)</p></li>
+</ul>
+</section>
+<section id="bastl-instruments" class="level2">
+<h2 class="anchored" data-anchor-id="bastl-instruments">Bastl Instruments</h2>
+<ul>
+<li><p><a href="https://bastl-instruments.com/eurorack/modules/ikarie">Ikarie</a> [<a href="manuals/manual-ikarie-web.pdf">manual</a>] [<a href="https://bastl-instruments.com/support/updates">updates</a>]</p></li>
+<li><p><a href="https://bastl-instruments.com/eurorack/modules/pizza">Pizza</a> [<a href="manuals/manual-pizza-oscillator-web.pdf">manual</a>] [<a href="https://bastl-instruments.com/support/updates">updates</a>]</p></li>
+</ul>
+</section>
+<section id="befaco" class="level2">
+<h2 class="anchored" data-anchor-id="befaco">Befaco</h2>
+<ul>
+<li><p><a href="https://www.befaco.org/midi-thing-v2/">MIDI Thing V2</a> [<a href="manuals/Midi_Thing_V2_Quick_start_guide_A4.pdf">quick start</a>] [<a href="manuals/Midi%20Thing%20V2_User_Manual.pdf">manual</a>] [<a href="https://github.com/Befaco/MIDIThing2/releases">updates</a>] [<a href="https://befaco.org/configmidithing2">online editor</a>]</p></li>
+<li><p><a href="https://www.befaco.org/stmix/">STMix</a> [<a href="manuals/StMix_User_Manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://www.befaco.org/vcv-rack/">VCV Rack</a> (<a href="https://library.vcvrack.com/?brand=Befaco" class="uri">https://library.vcvrack.com/?brand=Befaco</a>)</p></li>
+</ul>
+</section>
+<section id="boredbrain" class="level2">
+<h2 class="anchored" data-anchor-id="boredbrain">Boredbrain</h2>
+<ul>
+<li><a href="https://boredbrainmusic.com/product/xcelon/">Xcelon</a> [<a href="manuals/Xcelon-UserGuide_v1.0.pdf">manual</a>]</li>
+</ul>
+</section>
+<section id="der-mann-mit-der-maschine" class="level2">
+<h2 class="anchored" data-anchor-id="der-mann-mit-der-maschine">Der Mann mit der Maschine</h2>
+<ul>
+<li><a href="https://shop.dermannmitdermaschine.de/pages/droid-universal-cv-processor">DROID</a> [<a href="manuals/droid-manual-blue-5.pdf">manual</a>] [<a href="https://shop.dermannmitdermaschine.de/pages/downloads">downloads and updates</a>]</li>
+</ul>
+</section>
+<section id="divkid" class="level2">
+<h2 class="anchored" data-anchor-id="divkid">DivKid</h2>
+<ul>
+<li><a href="https://www.befaco.org/stereo-strip/">Stereo Strip</a> [<a href="manuals/Stereo_Strip_manual.pdf">manual</a>] [<a href="https://youtu.be/4ChJ8M9P_IM">video</a>]</li>
+</ul>
+</section>
+<section id="dreadbox" class="level2">
+<h2 class="anchored" data-anchor-id="dreadbox">Dreadbox</h2>
+<ul>
+<li><a href="https://www.dreadbox-fx.com/hysteria/">Hysteria</a> [<a href="manuals/Hysteria-v1.1-Users-Manual-.pdf">manual</a>] [<a href="https://youtu.be/X53vSXa_bp0">video</a>]</li>
+</ul>
+</section>
+<section id="empress-effects" class="level2">
+<h2 class="anchored" data-anchor-id="empress-effects">Empress Effects</h2>
+<ul>
+<li><a href="https://empresseffects.com/products/zoia-euroburo">ZOIA Euroburo</a> [<a href="manuals/ZEBU%20Manual%202%20dot%2030.pdf">manual</a>] [<a href="manuals/ZOIA%20Euroburo%20addendum%20manual.pdf">addendum</a>] [<a href="https://docs.google.com/document/d/1cZw7JVD5VwHTmOubZahnvFKJogcycV__8mYXGmKsMeY">quickstart</a>] [<a href="https://empresseffects.freshdesk.com/support/solutions/articles/1000308788-updating-firmware-on-the-zoia-and-euroburo-latest-version-2-80-beta-3-0-">updates</a>]</li>
+</ul>
+</section>
+<section id="expert-sleepers" class="level2">
+<h2 class="anchored" data-anchor-id="expert-sleepers">Expert Sleepers</h2>
+<ul>
+<li><p><a href="https://www.expert-sleepers.co.uk/distingEX.html">Disting EX</a> [<a href="manuals/disting_EX_user_manual_1.25.pdf">manual</a>] [<a href="https://www.expert-sleepers.co.uk/distingEXfirmwareupdates.html">updates</a>]</p></li>
+<li><p><a href="https://www.expert-sleepers.co.uk/tinymidibreakout.html">Tiny MIDI breakout</a></p></li>
+<li><p><a href="https://www.expert-sleepers.co.uk/es9.html">ES-9</a> [<a href="manuals/es9_user_manual_1.3.pdf">manual</a>] [<a href="https://www.expert-sleepers.co.uk/es9firmware.html">updates</a>]</p></li>
+<li><p><a href="https://www.expert-sleepers.co.uk/es5.html">ES-5</a> [<a href="https://www.expert-sleepers.co.uk/es5usermanual.html">manual</a>]</p></li>
+<li><p><a href="https://www.expert-sleepers.co.uk/esx8md.html">ESX-8MD</a> [<a href="https://www.expert-sleepers.co.uk/esx8mdusermanual.html">manual</a>]</p></li>
+<li><p><a href="https://www.expert-sleepers.co.uk/esx8cv.html">ESX-8CV</a> [<a href="https://www.expert-sleepers.co.uk/esx8cvusermanual.html">manual</a>]</p></li>
+<li><p><a href="https://www.expert-sleepers.co.uk/littlemikey.html">Little Mikey</a> [<a href="https://www.expert-sleepers.co.uk/littlemikeyusermanual.html">manual</a>]</p></li>
+</ul>
+</section>
+<section id="frap-tools" class="level2">
+<h2 class="anchored" data-anchor-id="frap-tools">Frap Tools</h2>
+<ul>
+<li><p><a href="https://frap.tools/products/321/">321</a> [<a href="manuals/MANUALONE.pdf">manual</a>]</p></li>
+<li><p><a href="https://frap.tools/products/333/">333</a> [<a href="manuals/MANUALONE.pdf">manual</a>]</p></li>
+<li><p><a href="https://frap.tools/products/411/">411</a> [<a href="manuals/MANUALONE.pdf">manual</a>]</p></li>
+</ul>
+</section>
+<section id="happy-nerding" class="level2">
+<h2 class="anchored" data-anchor-id="happy-nerding">Happy Nerding</h2>
+<ul>
+<li><a href="https://happynerding.com/category/fx-aid-pro/">FX Aid PRO</a> [<a href="manuals/FxAidPro-04-08.pdf">manual</a>] [<a href="https://fxaid.app/pro">online editor</a>] [<a href="https://happynerding.com/category/fx-aid-pro/">updates</a>]</li>
+</ul>
+</section>
+<section id="instruo" class="level2">
+<h2 class="anchored" data-anchor-id="instruo">Instruo</h2>
+<ul>
+<li><a href="https://www.instruomodular.com/product/cruin">Cruïn</a> [<a href="manuals/cruïnn-Manual.pdf">manual</a>] [<a href="manuals/cruinn-Quickstart-Print.pdf">quickstart</a>] [<a href="https://youtu.be/yhmkv1Ly8x0">video</a>]</li>
+</ul>
+</section>
+<section id="knobula" class="level2">
+<h2 class="anchored" data-anchor-id="knobula">Knobula</h2>
+<ul>
+<li><p><a href="https://knobula.com/kickain">Kickain</a> [<a href="manuals/Kickain_QuickStartGuide.pdf">quickstart</a>] [<a href="https://www.knobula.com/downloads">downloads and updates</a>]</p></li>
+<li><p><a href="https://knobula.com/pianophonic">Pianophonic</a> [<a href="manuals/Pianophonic_Manual.pdf">manual</a>] [<a href="manuals/Pianophonic_QuickStartGuide.pdf">quickstart</a>] [<a href="https://www.knobula.com/downloads">downloads and updates</a>]</p></li>
+</ul>
+</section>
+<section id="make-noise" class="level2">
+<h2 class="anchored" data-anchor-id="make-noise">Make Noise</h2>
+<ul>
+<li><p><a href="https://www.makenoisemusic.com/modules/dpo">DPO</a> [<a href="manuals/dpo-manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://www.makenoisemusic.com/modules/dxg">DXG</a> [<a href="manuals/dxg-manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://www.makenoisemusic.com/modules/maths">Maths</a> [<a href="manuals/MATHSmanual2013.pdf">manual</a>]</p></li>
+<li><p><a href="https://www.makenoisemusic.com/modules/mimeophon">Mimeophon</a> [<a href="manuals/mimeophon-manual.pdf">manual</a>] [<a href="https://www.makenoisemusic.com/modules/mimeophon">updates</a>]</p></li>
+<li><p><a href="https://www.makenoisemusic.com/modules/morphagene">Morphagene</a> [<a href="manuals/morphagene-manual.pdf">manual</a>] [<a href="https://www.makenoisemusic.com/modules/morphagene">updates</a>]</p></li>
+<li><p><a href="https://www.makenoisemusic.com/modules/spectraphon">Spectraphon</a> [<a href="manuals/spectraphon-manual.pdf">manual</a>] [<a href="https://www.makenoisemusic.com/modules/spectraphon">updates</a>]</p></li>
+<li><p><a href="https://www.makenoisemusic.com/modules/x-pan">X-Pan</a> [<a href="manuals/x-pan-manual.pdf">manual</a>]</p></li>
+</ul>
+</section>
+<section id="michigan-synth-works" class="level2">
+<h2 class="anchored" data-anchor-id="michigan-synth-works">Michigan Synth Works</h2>
+<ul>
+<li><p><a href="https://michigansynthworks.com/collections/euromodules-test/products/8m-fader-bank-with-cv-i2c-and-midi">F8R</a> [<a href="https://michigansynthworks.com/collections/euromodules-test/products/8m-fader-bank-with-cv-i2c-and-midi">updates</a>] [<a href="https://misw.us/editor">online editor</a>]</p></li>
+<li><p><a href="https://ornament-and-cri.me/">µO_C micro Ornament &amp; Crime</a> [<a href="https://ornament-and-cri.me/firmware/">updates</a>] [<a href="https://github.com/djphazer/O_C-Phazerville">phazerville</a>] [<a href="https://youtu.be/XRGlAmz3AKM">video 1</a>] [<a href="https://youtu.be/bziSog_xscA">video 2</a>]</p></li>
+</ul>
+</section>
+<section id="mordax" class="level2">
+<h2 class="anchored" data-anchor-id="mordax">Mordax</h2>
+<ul>
+<li><a href="https://mordax.net/products/data">DATA</a> [<a href="manuals/DATA_Manual.pdf">manual</a>] [<a href="https://mordax.net/pages/data-firmware">updates</a>]</li>
+</ul>
+</section>
+<section id="mutable-instruments" class="level2">
+<h2 class="anchored" data-anchor-id="mutable-instruments">Mutable Instruments</h2>
+<ul>
+<li><p><a href="https://mutable-instruments.net/modules/beads/">Beads</a> [<a href="manuals/beads_quickstart.pdf">manual</a>]</p></li>
+<li><p><a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/blades">Blades</a> [<a href="manuals/blades_quickstart.pdf">manual</a>]</p></li>
+<li><p><a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/links">Links</a> [<a href="manuals/links_quickstart.pdf">manual</a>]</p></li>
+<li><p><a href="https://mutable-instruments.net/modules/marbles/">Marbles</a> [<a href="manuals/marbles_quickstart.pdf">manual</a>] [<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/marbles/firmware/">latest firmware</a>]</p></li>
+<li><p><a href="https://mutable-instruments.net/modules/plaits/">Plaits</a> [<a href="manuals/plaits_quickstart.pdf">manual</a>] [<a href="https://pichenettes.github.io/plaits-editor/">online editor</a>] [<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/firmware/">latest firmware</a>]</p></li>
+<li><p><a href="https://mutable-instruments.net/modules/rings/">Rings</a> [<a href="manuals/rings_quickstart.pdf">manual</a>] [<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/rings/firmware/">latest firmware</a>]</p></li>
+<li><p><a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/ripples_2020/">Ripples</a> (2020) [<a href="manuals/ripples_quickstart.pdf">manual</a>]</p></li>
+<li><p><a href="https://mutable-instruments.net/modules/stages/">Stages</a> [<a href="manuals/stages_quickstart.pdf">manual</a>] [<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/stages/firmware/">latest firmware</a>]</p></li>
+<li><p><a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/tides_2018/">Tides</a> (2018) [<a href="manuals/tides_quickstart.pdf">manual</a>] [<a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/tides_2018/firmware/">latest firmware</a>]</p></li>
+<li><p><a href="https://pichenettes.github.io/mutable-instruments-documentation/modules/veils_2020/">Veils</a> (2020) [<a href="manuals/veils_quickstart.pdf">manual</a>]</p></li>
+</ul>
+<p>See also: <a href="https://pichenettes.github.io/mutable-instruments-documentation/third_party_firmware/" class="uri">https://pichenettes.github.io/mutable-instruments-documentation/third_party_firmware/</a></p>
+</section>
+<section id="noise-engineering" class="level2">
+<h2 class="anchored" data-anchor-id="noise-engineering">Noise Engineering</h2>
+<ul>
+<li><p><a href="https://noiseengineering.us/products/ampla-versio?color=black">Ampla Versio</a> [<a href="https://manuals.noiseengineering.us/av/">manual</a>]</p></li>
+<li><p><a href="https://noiseengineering.us/products/basimilus-iteritas-alia?color=black">Basimilus Iteritas Alia</a> [<a href="https://manuals.noiseengineering.us/bia/">manual</a>]</p></li>
+<li><p><a href="https://noiseengineering.us/products/desmodus-versio?color=black">Desmodus Versio</a> [<a href="https://manuals.noiseengineering.us/dv/">manual</a>]</p></li>
+<li><p><a href="https://noiseengineering.us/products/librae-legio?color=black">Librae Legio</a> [<a href="https://manuals.noiseengineering.us/ll/">manual</a>]</p></li>
+<li><p><a href="https://noiseengineering.us/products/roucha-legio?color=black">Roucha Legio</a> [<a href="https://manuals.noiseengineering.us/rl/">manual</a>]</p></li>
+<li><p><a href="https://noiseengineering.us/products/sinc-defero?color=black">Sinc Defero</a> [<a href="https://manuals.noiseengineering.us/sd/">manual</a>]</p></li>
+</ul>
+<p>See also:</p>
+<ul>
+<li><p><a href="https://noiseengineering.us/pages/world-of-alia">World of Alia</a></p></li>
+<li><p><a href="https://noiseengineering.us/pages/world-of-legio">World of Legio</a></p></li>
+<li><p><a href="https://noiseengineering.us/pages/world-of-versio">World of Versio</a></p></li>
+</ul>
+</section>
+<section id="oxi-instruments" class="level2">
+<h2 class="anchored" data-anchor-id="oxi-instruments">OXI Instruments</h2>
+<ul>
+<li><p>Meta</p></li>
+<li><p><a href="https://oxiinstruments.com/oxi-coral/">OXI Coral</a> [<a href="manuals/OXI%20CORAL%20User%20Manual.pdf">manual</a>] [<a href="https://oxiinstruments.com/oxi-coral/update/">updates</a>]</p></li>
+<li><p><a href="https://oxiinstruments.com/oxi-one/">OXI One</a> [<a href="manuals/OXI%20One%20User%20Manual.pdf">manual</a>] [<a href="manuals/OXI%20ONE%20-%20Quick%20Guide.pdf">quickstart</a>] [<a href="https://oxiinstruments.com/oxi-one/update/">updates</a>]</p></li>
+</ul>
+</section>
+<section id="qu-bit" class="level2">
+<h2 class="anchored" data-anchor-id="qu-bit">Qu-Bit</h2>
+<ul>
+<li><p><a href="https://www.qubitelectronix.com/shop/p/aurora">Aurora</a> [<a href="manuals/Aurora_v1.7.4.pdf">manual</a>] [<a href="manuals/Aurora_getting_started_v1.0.pdf">quickstart</a>] [<a href="https://www.qubitelectronix.com/alternate-firmware/aurora">updates</a>]</p></li>
+<li><p><a href="https://www.qubitelectronix.com/shop/p/data-bender">Data Bender</a> [<a href="manuals/Data_Bender_manual_2024.pdf">manual</a>] [<a href="manuals/DB_getting_started.pdf">quickstart</a>] [<a href="https://www.qubitelectronix.com/alternate-firmware/data-bender">updates</a>]</p></li>
+<li><p><a href="https://www.qubitelectronix.com/shop/p/mojave">Mojave</a> [<a href="manuals/mojave_manual.pdf">manual</a>] [<a href="manuals/mojave_getting_started.pdf">quickstart</a>] [<a href="https://www.qubitelectronix.com/alternate-firmware/mojave">updates</a>] [<a href="https://narwhal.qubitelectronix.com/">online editor</a>]</p></li>
+<li><p><a href="https://www.qubitelectronix.com/shop/p/nautilus">Nautilus</a> [<a href="manuals/Nautilus_v1.1.3.pdf">manual</a>] [<a href="manuals/nautilus_getting_started_v1.0.3.pdf">quickstart</a>] [<a href="https://www.qubitelectronix.com/alternate-firmware/nautilus">updates</a>] [<a href="https://narwhal.qubitelectronix.com/">online editor</a>]</p></li>
+</ul>
+</section>
+<section id="squarp-instruments" class="level2">
+<h2 class="anchored" data-anchor-id="squarp-instruments">Squarp Instruments</h2>
+<ul>
+<li><a href="https://squarp.net/hermodplus/">Hermod+</a> [<a href="https://squarp.net/hermodplus/manual/">online manual</a>] [<a href="manuals/HERMODPLUS_manual-192ba1f6c17a52c55deea60d1b6230b4.pdf">manual</a>] [<a href="manuals/HERMOD+%20QUICKSTART%20105x125-563d6977f9cfea7e52e7415d8f622743.pdf">quickstart</a>] [<a href="https://squarp.net/hermodplus/firmware/">updates</a>]</li>
+</ul>
+</section>
+<section id="verbos-electronics" class="level2">
+<h2 class="anchored" data-anchor-id="verbos-electronics">Verbos Electronics</h2>
+<ul>
+<li><p><a href="https://www.verboselectronics.com/modules/amplitudeandtonecontroller-k3dpb">Amp &amp; Tone</a> [<a href="manuals/AMP+&amp;+TONE+Tech+Card.pdf">manual</a>] [<a href="https://www.youtube.com/watch?v=1hW6SAgKTGo">video 1</a>] [<a href="https://www.youtube.com/watch?v=64EGFrEeALw">video 2</a>] [<a href="https://www.youtube.com/watch?v=dJPrHQmXSqE">video 3</a>]</p></li>
+<li><p><a href="https://www.verboselectronics.com/modules/harmonic-oscillator">Harmonic Oscillator</a> [<a href="manuals/Harmonic+Oscillator+Tech+Card.pdf">manual</a>]</p></li>
+</ul>
+</section>
+<section id="winter-modular" class="level2">
+<h2 class="anchored" data-anchor-id="winter-modular">Winter Modular</h2>
+<ul>
+<li><a href="https://winter-modular.com/one2five/">ONE2FIVE</a></li>
+</ul>
+</section>
+<section id="wmd" class="level2">
+<h2 class="anchored" data-anchor-id="wmd">WMD</h2>
+<ul>
+<li><p><a href="https://wmdevices.com/products/c4rbn">C4RBN</a> [<a href="manuals/C4RBN_Manual_v1.1.pdf">manual</a>]</p></li>
+<li><p><a href="https://wmdevices.com/products/javelin">Javelin</a> [<a href="manuals/JavelinManual_v1.1.pdf">manual</a>]</p></li>
+<li><p><a href="https://wmdevices.com/products/mscl">MSCL</a> [<a href="manuals/MSCL_Manual_v0.2_1.pdf">manual</a>]</p></li>
+</ul>
+</section>
+<section id="xaoc-devices" class="level2">
+<h2 class="anchored" data-anchor-id="xaoc-devices">Xaoc Devices</h2>
+<ul>
+<li><p><a href="https://xaocdevices.com/main/batumi2/">Batumi II</a> [<a href="manuals/xaoc_batumi2_poti2_manual.pdf">manual</a>] [<a href="https://xaocdevices.com/main/batumi2/">updates</a>]</p></li>
+<li><p><a href="https://xaocdevices.com/main/poti2/">Poti II</a> [<a href="manuals/xaoc_batumi2_poti2_manual.pdf">manual</a>]</p></li>
+<li><p><a href="https://xaocdevices.com/main/zadar/">Zadar</a> [<a href="manuals/xaoc_zadar_manual.pdf">manual</a>] [<a href="manuals/xaoc_zadar_chart_2.0.pdf">chart</a>] [<a href="https://xaocdevices.com/main/zadar/">updates</a>]</p></li>
+</ul>
+</section>
+<section id="ziqal" class="level2">
+<h2 class="anchored" data-anchor-id="ziqal">Ziqal</h2>
+<ul>
+<li><a href="https://ziqal.com/?v=d3dcf429c679">Dimension MK3</a> [<a href="manuals/dimension%20mk3%20-%20user%20guide.pdf">manual</a>] [<a href="https://ziqal.com/support/?v=d3dcf429c679">updates</a>]</li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
