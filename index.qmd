@@ -13,6 +13,12 @@ format:
 
 -   [Learn Modular: A resource to help you master your modular synth](https://learningmodular.com/)
 
+-   <https://learningsynths.ableton.com/>
+
+-   <https://learningmusic.ableton.com/>
+
+-   <https://www.ableton.com/en/live/learn-live/>
+
 ## Racks
 
 [![](https://cdn.modulargrid.net/img/racks/modulargrid_2585260.jpg)](https://modulargrid.net/e/racks/view/2585260)
@@ -93,7 +99,7 @@ format:
 
 -   [Tiny MIDI breakout](https://www.expert-sleepers.co.uk/tinymidibreakout.html)
 
--   [ES-9](https://www.expert-sleepers.co.uk/es9.html) \[[manual](manuals/es9_user_manual_1.3.pdf)\] \[[updates](https://www.expert-sleepers.co.uk/es9firmware.html)\]
+-   [ES-9](https://www.expert-sleepers.co.uk/es9.html) \[[manual](manuals/es9_user_manual_1.3.pdf)\] \[[updates](https://www.expert-sleepers.co.uk/es9firmware.html)\] \[[online editor](https://www.expert-sleepers.co.uk/webapps/es9_config_tool_1.3.html)\]
 
 -   [ES-5](https://www.expert-sleepers.co.uk/es5.html) \[[manual](https://www.expert-sleepers.co.uk/es5usermanual.html)\]
 
