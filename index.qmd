@@ -1,9 +1,17 @@
 ---
-title: "modular_setup"
+title: "Modular Setup"
 format:
   html:
     toc: true
 ---
+
+## Resources
+
+-   [Modular Grid: A database and planner for modular synthesizers](https://modulargrid.net/)
+
+-   [Synth Modes: Collection of mobile-friendly synthesizer cheat sheets](https://synthmodes.com/)
+
+-   [Learn Modular: A resource to help you master your modular synth](https://learningmodular.com/)
 
 ## Racks
 
