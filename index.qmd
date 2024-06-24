@@ -11,14 +11,6 @@ format:
 
 -   [Synth Modes: Collection of mobile-friendly synthesizer cheat sheets](https://synthmodes.com/)
 
--   [Learn Modular: A resource to help you master your modular synth](https://learningmodular.com/)
-
--   <https://learningsynths.ableton.com/>
-
--   <https://learningmusic.ableton.com/>
-
--   <https://www.ableton.com/en/live/learn-live/>
-
 ## Racks
 
 [![](https://cdn.modulargrid.net/img/racks/modulargrid_2585260.jpg)](https://modulargrid.net/e/racks/view/2585260)
